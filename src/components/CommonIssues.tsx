@@ -5,11 +5,11 @@ import { faXmark } from "@fortawesome/free-solid-svg-icons";
 const CommonIssues = () => {
   return (
     <>
-      <Flex width="100%" align="center" justify="center" >
+      <Flex width="100%" align="center" justify="center" mb="150px">
         <Box width="45%" pr="">
           <Image src={cakegraph} borderRadius="20px"></Image>
         </Box>
-        <Box width="45%" pl="20">
+        <Box width="40%" pl="20">
           <Flex direction="column">
             <Text textStyle="4xl" fontWeight="600">
               Toma control de tus finanzas
@@ -17,7 +17,7 @@ const CommonIssues = () => {
             <Text
               textStyle="xl"
               color="#52525B"
-              width="70%"
+              width="100%"
               lineHeight="2"
               mb="10"
             >
@@ -35,9 +35,10 @@ const CommonIssues = () => {
             <Text
               textStyle="xl"
               color="#52525B"
-              width="70%"
+              width="100%"
               lineHeight="2"
               mb="7"
+              pl="50px"
             >
               A medida que tu negocio crece, también lo hacen las
               responsabilidades financieras. Lo que funcionaba antes, ya no es
@@ -52,9 +53,10 @@ const CommonIssues = () => {
             <Text
               textStyle="xl"
               color="#52525B"
-              width="70%"
+              width="100%"
               lineHeight="2"
               mb="7"
+              pl="50px"
             >
               No saber con certeza cómo cumplir con tus obligaciones tributarias
               puede generar gastos inesperados y estrés innecesario.
@@ -68,9 +70,10 @@ const CommonIssues = () => {
             <Text
               textStyle="xl"
               color="#52525B"
-              width="70%"
+              width="100%"
               lineHeight="2"
               mb="7"
+              pl="50px"
             >
               Eres experto en tu negocio, pero sin una base financiera sólida,
               es difícil tomar decisiones con seguridad.

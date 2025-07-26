@@ -3,6 +3,8 @@ import NavBar from "./components/NavBar";
 import MainImage from "./components/MainImage";
 import ServiceCards from "./components/ServiceCards";
 import CommonIssues from "./components/CommonIssues";
+import ContactForm from "./components/ContactForm";
+import Services from "./components/Services";
 function App() {
   return (
     <Grid
@@ -25,6 +27,8 @@ function App() {
         </Box>
         <ServiceCards></ServiceCards>
         <CommonIssues></CommonIssues>
+        <Services></Services>
+        <ContactForm></ContactForm>
       </GridItem>
     </Grid>
   );
