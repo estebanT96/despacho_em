@@ -2,7 +2,7 @@ import { Grid, GridItem, Box } from "@chakra-ui/react";
 import NavBar from "./components/NavBar";
 import MainImage from "./components/MainImage";
 import ServiceCards from "./components/ServiceCards";
-
+import CommonIssues from "./components/CommonIssues";
 function App() {
   return (
     <Grid
@@ -24,6 +24,7 @@ function App() {
           </Box>
         </Box>
         <ServiceCards></ServiceCards>
+        <CommonIssues></CommonIssues>
       </GridItem>
     </Grid>
   );
