@@ -48,7 +48,7 @@ const MainImage = () => {
           </Text>
           <Button
             width="30%"
-            fontFamily="Montserrat"
+            
             fontWeight="600"
             fontSize="lg"
             bg="#174dffff"

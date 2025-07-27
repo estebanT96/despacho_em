@@ -1,4 +1,4 @@
-import { Box, Text, Flex, Grid, GridItem } from "@chakra-ui/react";
+import { Box, Text, Grid, GridItem } from "@chakra-ui/react";
 
 const Services = () => (
   <>

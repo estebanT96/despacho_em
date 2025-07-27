@@ -1,13 +1,20 @@
-import { Box, Button, Card, Text, Link, VStack } from "@chakra-ui/react";
+import { Box, Button, Card, Link, VStack } from "@chakra-ui/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faWhatsapp, faInstagram, faFacebook } from "@fortawesome/free-brands-svg-icons";
+import {
+  faWhatsapp,
+  faInstagram,
+  faFacebook,
+} from "@fortawesome/free-brands-svg-icons";
 const ContactForm = () => (
   <>
-    <Box maxW="450px" width="100%" margin="0 auto">
-      <Text textStyle="4xl" fontWeight="600" mb="5">
-        Contáctanos
-      </Text>
-      <Card.Root flexDirection="row" overflow="hidden" height="270px">
+    <Box maxW="450px" width="100%">
+      <Card.Root
+        flexDirection="row"
+        overflow="hidden"
+        height="270px"
+        border="none"
+        bg="rgba(239, 239, 239, 1)"
+      >
         <Box>
           <Card.Body>
             <Card.Title mb="2">Envíanos un mensaje</Card.Title>
