@@ -1,4 +1,4 @@
-import { HStack, Text, Image, Box, Flex, Button } from "@chakra-ui/react";
+import { HStack, Text, Image, Box, Flex, Button, Link } from "@chakra-ui/react";
 import logo from "../assets/EM_Imagenes/em-logo.svg";
 const NavBar = () => {
   return (
@@ -24,17 +24,23 @@ const NavBar = () => {
 
           <Box display={{ base: "none", lg: "block" }} pr="50px">
             <Flex gap="10" fontWeight="500">
-              <Button variant="ghost">
-                <Text textStyle="lg">Nosotros</Text>
-              </Button>
-              <Button variant="ghost">
-                {" "}
-                <Text textStyle="lg">Contacto</Text>
-              </Button>
-              <Button colorPalette="blue">
-                {" "}
-                <Text textStyle="lg">Servicios</Text>
-              </Button>
+              <Link>
+                <Button variant="ghost">
+                  <Text textStyle="lg">Nosotros</Text>
+                </Button>
+              </Link>
+              <Link>
+                <Button variant="ghost">
+                  {" "}
+                  <Text textStyle="lg">Contacto</Text>
+                </Button>
+              </Link>
+              <Link>
+                <Button colorPalette="blue">
+                  {" "}
+                  <Text textStyle="lg">Servicios</Text>
+                </Button>
+              </Link>
             </Flex>
           </Box>
         </Flex>

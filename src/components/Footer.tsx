@@ -1,5 +1,5 @@
 import ContactForm from "./ContactForm";
-import { Box, Flex, Grid, GridItem, Link, Text } from "@chakra-ui/react";
+import { VStack, Flex, Grid, GridItem, Link, Text } from "@chakra-ui/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faInstagram,
@@ -41,14 +41,14 @@ const Footer = () => {
             <Text textAlign="center" textStyle="lg" fontWeight="600" my="12px">
               Nuestras Redes
             </Text>
-            <Box>
-              <Link>
+            <VStack>
+              <Link href="https://www.instagram.com/despachoesquerm/">
                 Instagram <FontAwesomeIcon icon={faInstagram} size="xl" />
               </Link>
-              <Link>
+              <Link href="https://www.facebook.com/EsquerM/">
                 Facebook <FontAwesomeIcon icon={faSquareFacebook} size="xl" />
               </Link>
-            </Box>
+            </VStack>
           </Flex>
         </GridItem>
       </Grid>
