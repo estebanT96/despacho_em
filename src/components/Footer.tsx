@@ -42,10 +42,13 @@ const Footer = () => {
               Nuestras Redes
             </Text>
             <VStack>
-              <Link href="https://www.instagram.com/despachoesquerm/">
+              <Link
+                href="https://www.instagram.com/despachoesquerm/"
+                target="blank"
+              >
                 Instagram <FontAwesomeIcon icon={faInstagram} size="xl" />
               </Link>
-              <Link href="https://www.facebook.com/EsquerM/">
+              <Link href="https://www.facebook.com/EsquerM/" target="blank">
                 Facebook <FontAwesomeIcon icon={faSquareFacebook} size="xl" />
               </Link>
             </VStack>
