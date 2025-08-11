@@ -1,4 +1,4 @@
-import { Avatar, Card, Flex } from "@chakra-ui/react";
+import { Card, Flex } from "@chakra-ui/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClock, faFaceSmileBeam } from "@fortawesome/free-regular-svg-icons";
 import { faHandHoldingDollar } from "@fortawesome/free-solid-svg-icons";

@@ -1,4 +1,4 @@
-import { Box, Button, Card, Link, VStack, Text, Flex } from "@chakra-ui/react";
+import { Box, Button, Link, VStack, Text, Flex } from "@chakra-ui/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faWhatsapp,
