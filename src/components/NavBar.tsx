@@ -1,23 +1,45 @@
-import { HStack, Link, Text, Image, Box, Flex } from "@chakra-ui/react";
-import logo from "../assets/EM_Imagenes/E (1).svg";
+import { HStack, Text, Image, Box, Flex, Button, Link } from "@chakra-ui/react";
+import logo from "../assets/EM_Imagenes/em-logo.svg";
 const NavBar = () => {
   return (
     <Box pt="10px" px="10px">
       <HStack>
         <Flex align="center" justify="space-between" width="100%">
-          <Image src={logo} boxSize={{ base: "80px", lg: "126px" }}></Image>
-          <Box display={{ base: "none", lg: "block" }} pr="100px">
-            <Flex gap="10">
+          <Flex width="40%" justify="space-between" align="center">
+            <Image src={logo} boxSize={{ base: "", lg: "132px" }}></Image>
+            <Flex direction="column" align="center" position="relative">
+              <Text
+                fontWeight="500"
+                color="#3d2713"
+                fontFamily="Domine"
+                fontSize="5xl"
+              >
+                ESQUER MONTAÑO
+              </Text>
+              <Text position="absolute" bottom="-2" fontSize="lg">
+                CONTADOR PÚBLICO
+              </Text>
+            </Flex>
+          </Flex>
+
+          <Box display={{ base: "none", lg: "block" }} pr="50px">
+            <Flex gap="10" fontWeight="500">
               <Link>
-                <Text textStyle="lg">Nosotros</Text>
+                <Button variant="ghost">
+                  <Text textStyle="lg">Nosotros</Text>
+                </Button>
               </Link>
               <Link>
-                {" "}
-                <Text textStyle="lg">Contacto</Text>
+                <Button variant="ghost">
+                  {" "}
+                  <Text textStyle="lg">Contacto</Text>
+                </Button>
               </Link>
               <Link>
-                {" "}
-                <Text textStyle="lg">Servicios</Text>
+                <Button colorPalette="blue">
+                  {" "}
+                  <Text textStyle="lg">Servicios</Text>
+                </Button>
               </Link>
             </Flex>
           </Box>

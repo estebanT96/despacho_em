@@ -1,24 +1,39 @@
-import { Grid, GridItem } from "@chakra-ui/react";
+import { Grid, GridItem, Box } from "@chakra-ui/react";
 import NavBar from "./components/NavBar";
+import MainImage from "./components/MainImage";
+import ServiceCards from "./components/ServiceCards";
+import CommonIssues from "./components/CommonIssues";
+import Footer from "./components/Footer";
+import Services from "./components/Services";
 
 function App() {
   return (
-    <Grid
-      templateAreas={{
-        base: `"nav" "main"`,
-        lg: `"nav nav" "aside main"`,
-      }}
-    >
-      <GridItem area="nav" bg="white">
-        <NavBar />
-      </GridItem>
-      <GridItem area="aside" bg="green" display={{base:"none", lg:"block"}}>
-        Aside
-      </GridItem>
-      <GridItem area="main" bg="yellow">
-        Main
-      </GridItem>
-    </Grid>
+    <>
+      <Grid
+        maxWidth="1600px"
+        width="100%"
+        margin="0 auto"
+        templateAreas={{
+          base: `"nav" "main"`,
+          lg: `"nav" "main"`,
+        }}
+      >
+        <GridItem area="nav">
+          <NavBar />
+        </GridItem>
+        <GridItem area="main" width="100%">
+          <Box height="88vh">
+            <Box bg="black" borderRadius="20px">
+              <MainImage></MainImage>
+            </Box>
+          </Box>
+          <ServiceCards></ServiceCards>
+          <CommonIssues></CommonIssues>
+          <Services></Services>
+        </GridItem>
+      </Grid>
+      <Footer></Footer>
+    </>
   );
 }
 export default App;
